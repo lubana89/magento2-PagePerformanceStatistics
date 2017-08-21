@@ -1,0 +1,12 @@
+<?php $helper = $this->helper('Lubana\PagePerformance\Helper\Data'); ?>
+<?php if($helper->isActive()):?>
+<script>
+require(['jquery'],function ($) {
+    jQuery(window).load(function() {
+        (function(){var el=document.createElement('script');el.type='text/javascript';
+        el.src='<?php echo $this->getViewFileUrl('Lubana_PagePerformance::js/performance.js'); ?>';
+        document.getElementsByTagName('body')[0].appendChild(el);})();
+    });
+});
+</script>
+<?php endif; ?>

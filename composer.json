@@ -1,0 +1,16 @@
+{
+    "name": "Page Performance",
+    "description": "Displays Page Performance",
+    "require": {
+        "magento/magento-composer-installer": "*"
+    },
+    "type": "magento2-module",
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Lubana\\PagePerformance\\": ""
+        }
+    }
+}
